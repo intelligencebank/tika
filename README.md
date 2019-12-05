@@ -24,3 +24,4 @@ java -jar tika-app.jar --config=default-config.xml --text /path/to/doc.pdf
 java -jar tika-app.jar --config=ocr-config.xml --help
 java -jar tika-app.jar --config=ocr-config.xml --text /path/to/doc.pdf
 ```
+https://cwiki.apache.org/confluence/display/tika/TikaOCR
