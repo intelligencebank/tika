@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties>
+  <service-loader loadErrorHandler="IGNORE"/>
+  <parsers>
+    <parser class="org.apache.tika.parser.DefaultParser"/>
+    <parser class="org.apache.tika.parser.pdf.PDFParser">
+        <params>
+            <param name="extractInlineImages" type="bool">true</param>
+            <param name="allowExtractionForAccessibility" type="bool">true</param>
+            <param name="catchIntermediateExceptions" type="bool">false</param>
+            <param name="extractUniqueInlineImagesOnly" type="bool">false</param>
+            <param name="catchIntermediateExceptions" type="bool">false</param>
+            <param name="ocrDPI" type="int">314</param>
+            <param name="ocrImageQuality" type="float">2.1</param>
+            <param name="ocrImageFormatName" type="string">jpeg</param>
+            <param name="ocrImageScale" type="float">1.3</param>
+            <param name="maxMainMemoryBytes" type="int">524288000</param>
+        </params>
+    </parser>
+  </parsers>
+</properties>

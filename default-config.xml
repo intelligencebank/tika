@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties>
+  <service-loader loadErrorHandler="IGNORE"/>
+  <parsers>
+    <parser class="org.apache.tika.parser.DefaultParser">
+        <parser-exclude class="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+    </parser>
+  </parsers>
+</properties>
