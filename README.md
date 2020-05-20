@@ -1,5 +1,5 @@
 # Tika App build for command line (with pdfbox jai-imageio sqlite-jdbc ocr)
-## Build(Tika 1.22)
+## Build(Tika 1.24.1)
 - Install openjdk11
 - Install Maven3
 - Download tika full src
@@ -10,6 +10,7 @@
 ```
 - Edit tika-parsers/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java, comment everything in `checkInitialization`
 - `mvn install  -Dossindex.fail=false -DskipTests=true`
+- jar output in tika-app/target/tika-app-*.jar
 - On the server `apt-get install tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra` ...(and all the other useful languages, simply put `tesseract-ocr-all` for all the available languages)
 
 ## Exec
